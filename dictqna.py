@@ -89,3 +89,92 @@
 #     for j in range(1, 11):
 #         print(i * j, end=" ")
 #     print() 
+
+#WITHOUT LOOPS
+
+#1. Access a Value Safely without a KeyError.
+user = {"name": "Alice", "age": 25}
+print(user.get("name"))         
+print(user.get("age"))         
+print(user.get("city", "N/A"))
+
+
+#2. Find the Total Number of Key-Value Pairs.
+user = {"a": 1, "b": 2, "c": 3}
+print(len(user))
+
+
+#3. Add or Update a Key-Value Pair.
+user = {"name": "Alice"}
+user["age"] = 25
+user.update({"city": "New York"})
+
+print(user)
+
+
+#4. Remove a Key and Return Its Values.
+user = {"name": "Alice", "age": 25}
+removed_age = user.pop("age")
+
+print(removed_age) 
+print(user)         
+
+
+#5. Check if a Key Exists without a loop.
+user = {"name": "Alice", "age": 25}
+print("name" in user)  
+print("email" in user)  
+
+
+#6. Clear All Items from a Dictionary.
+user = {"name": "Alice", "age": 25, "city": "London"}
+user.clear()
+
+print(user) 
+
+#7. Merge Two Dictionaries in a Single Line.
+dict1 = {"a": 1, "b": 2}
+dict2 = {"b": 99, "c": 4} 
+
+merged = dict1 | dict2
+
+print(merged)
+
+
+#8. Extract All Keys into a List without using loop.
+user = {"name": "Alice", "age": 25, "city": "London"}
+
+keys_list = list(user.keys())
+values_list = list(user.values())
+both = list(user.items())
+
+print("keys:", keys_list)
+print("values:", values_list) 
+print(both)
+
+
+#9. Create a Dictionary from a List of Keys with Default Value 0.
+keys = ["apples", "bananas", "cherries"]
+
+counts = dict.fromkeys(keys, 0)
+
+print(counts)
+
+
+#10. Create a Shallow Copy of a Dictionary.
+original = {"a": 1, "b": 2}
+
+shallow_copy = original.copy()
+
+print(shallow_copy) 
+
+#Quick Cheat Sheet
+# TaskBuilt-in -- Syntax / Method
+# safe Read -- d.get(key, default)
+# Count Pairs -- len(d)
+# Remove & Return -- d.pop(key)
+# Check Key Existence -- key in d
+# Merge -- d1 | d2
+# Default Dict from Keys -- dict.fromkeys(keys, 0)
+
+
