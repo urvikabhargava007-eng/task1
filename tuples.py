@@ -16,13 +16,13 @@
 # print("Total even numbers:", even_count)
 
 #  Define the tuple of strings
-# words_tuple = ("Python", "is", "a", "powerful", "language.")
-# sentence = ""
-# index = 0
-# while index < len(words_tuple):
-#     sentence += words_tuple[index] + " "
-#     index += 1
-# print(sentence)
+words_tuple = ("Python", "is", "a", "powerful", "language.")
+sentence = ""
+index = 0
+while index < len(words_tuple):
+    sentence += words_tuple[index] + " "
+    index += 1
+print(sentence)
 
 # my_tuple = ("Jaipur", "Agra", "Delhi", "Nainital")
 # search_element = "Mumbai"
@@ -118,21 +118,21 @@
 # print("Reversed tuple:", reversed_tuple)
 
 #Define the two tuples
-tuple1 = ("Jaipur", "Agra")
-tuple2 = ("Delhi", "Nainital")
-combined_tuple = tuple1 + tuple2
-print("Combined tuple:", combined_tuple)
+# tuple1 = ("Jaipur", "Agra")
+# tuple2 = ("Delhi", "Nainital")
+# combined_tuple = tuple1 + tuple2
+# print("Combined tuple:", combined_tuple)
 
 # Define the original tuple
-my_tuple = ("Jaipur", "Delhi")
-repeated_tuple = my_tuple * 3
-print("Repeated tuple:", repeated_tuple)
+# my_tuple = ("Jaipur", "Delhi")
+# repeated_tuple = my_tuple * 3
+# print("Repeated tuple:", repeated_tuple)
 
 # Define the original tuple
-my_tuple = ("Jaipur", "Agra", "Delhi", "Nainital", "Mumbai")
-first_three = my_tuple[0:3]
-print("First three elements:", first_three)
+# my_tuple = ("Jaipur", "Agra", "Delhi", "Nainital", "Mumbai")
+# first_three = my_tuple[0:3]
+# print("First three elements:", first_three)
 
-my_tuple = ("Jaipur", "Agra", "Delhi", "Nainital")
-print("Delhi" in my_tuple)
+# my_tuple = ("Jaipur", "Agra", "Delhi", "Nainital")
+# print("Delhi" in my_tuple)
 
