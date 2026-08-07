@@ -1,20 +1,20 @@
-class SocialMedia:
+# class SocialMedia:
 
-    CEO = "Mark"
+#     CEO = "Mark"
 
-    def like(self):
-        print("Liked")
+#     def like(self):
+#         print("Liked")
 
-    def comment(self):
-        print("Commented")
+#     def comment(self):
+#         print("Commented")
 
-    def post(self):
-            print("Posted")
+#     def post(self):
+#             print("Posted")
 
-facebook = SocialMedia()
-facebook.comment()
-facebook.post()
-facebook.like()
+# facebook = SocialMedia()
+# facebook.comment()
+# facebook.post()
+# facebook.like()
 
 
 # class car:
@@ -44,18 +44,35 @@ facebook.like()
 # print(a.brand)
 # print(b.brand)
 
-class Dog:
+# class Dog:
 
-    species = "GS"
+#     species = "GS"
 
-    def eat(self):
-        self.b = 50
-        print(f"hungry right now.")
+#     def eat(self):
+#         self.b = 50
+#         print(f"hungry right now.")
 
-    def bark(self):
-        print(self.b)
-        print(f"says woof!")
+#     def bark(self):
+#         print(self.b)
+#         print(f"says woof!")
 
-a = Dog()
-a.eat()
-a.bark()
+# a = Dog()
+# a.eat()
+# a.bark()
+
+class employee:
+ def adddata(self):
+  self.id=int(input("Enter Employee ID:"))
+  self.name=input("Enter Employee Name:")
+  self.mob=int(input("Enter Mobile Number:"))
+  self.salary=int(input("Enter Employee Salary:"))
+
+ def display(self):
+     print("Employee ID;" , self.id)
+     print("Employee Name;" , self.name)
+     print("Employee Mob no;" , self.mob)
+     print("Employee Salary;" , self.salary)
+
+a=employee()
+a.adddata()
+a.display()
