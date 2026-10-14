@@ -12,21 +12,21 @@ class UserModel:
         return f"{self.id} - {self.name} ({self.email})"
 
 users = [
-    (1, "Rahul Sharma", "rahul@example.com", "Rahul@123", "customer", True),
-    (2, "Priya Verma", "priya@example.com", "Priya@123", "customer", True),
-    (3, "Amit Singh", "amit@example.com", "Amit@123", "admin", True),
-    (4, "Neha Gupta", "neha@example.com", "Neha@123", "customer", True),
-    (5, "Vikram Patel", "vikram@example.com", "Vikram@123", "seller", True),
-    (6, "Anjali Mehta", "anjali@example.com", "Anjali@123", "customer", True),
-    (7, "Rohan Joshi", "rohan@example.com", "Rohan@123", "customer", False),
-    (8, "Sneha Kapoor", "sneha@example.com", "Sneha@123", "seller", True),
-    (9, "Arjun Malhotra", "arjun@example.com", "Arjun@123", "customer", True),
-    (10, "Pooja Yadav", "pooja@example.com", "Pooja@123", "customer", True),
-    (11, "Karan Shah", "karan@example.com", "Karan@123", "admin", True),
-    (12, "Meera Nair", "meera@example.com", "Meera@123", "customer", True),
-    (13, "Sahil Khan", "sahil@example.com", "Sahil@123", "seller", False),
-    (14, "Isha Agarwal", "isha@example.com", "Isha@123", "customer", True),
-    (15, "Dev Mishra", "dev@example.com", "Dev@123", "customer", True),
+    (1, "Aarav Sharma", "aarav@example.com", "Aarav@123", "customer", True),
+    (2, "Divya Verma", "divya@example.com", "Divya@123", "customer", True),
+    (3, "Manish Kumar", "manish@example.com", "Manish@123", "admin", True),
+    (4, "Swati Das", "swati@example.com", "Swati@123", "customer", True),
+    (5, "Kunal Reddy", "kunal@example.com", "Kunal@123", "seller", True),
+    (6, "Tanvi Joshi", "tanvi@example.com", "Tanvi@123", "customer", True),
+    (7, "Rajat Verma", "rajat@example.com", "Rajat@123", "customer", False),
+    (8, "Nisha Pillai", "nisha@example.com", "Nisha@123", "seller", True),
+    (9, "Varun Nair", "varun@example.com", "Varun@123", "customer", True),
+    (10, "Deepika Sen", "deepika@example.com", "Deepika@123", "customer", True),
+    (11, "Kabir Khan", "kabir@example.com", "Kabir@123", "admin", True),
+    (12, "Simran Kaur", "simran@example.com", "Simran@123", "customer", True),
+    (13, "Nikhil Rao", "nikhil@example.com", "Nikhil@123", "seller", False),
+    (14, "Pooja Das", "poojadas@example.com", "Pooja@123", "customer", True),
+    (15, "Akash Iyer", "akash@example.com", "Akash@123", "customer", True),
 ]
 
 data = []
