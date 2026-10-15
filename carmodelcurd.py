@@ -382,7 +382,7 @@ def car_by_id(id:int, resp:Response):
      
 
 @app.post("/create_car")
-def create_car(car_data:dict):
+def create_car(car_data:dict , resp:Response):
 #    {
 #            "model":"Compass",
 #            "brand":"Maruti Suzuki",
@@ -409,7 +409,7 @@ def create_car(car_data:dict):
               car_data.get("city"),
               car_data.get("state")
           ]):
-
+          resp.status_code = status.HTTP_400_CONFLICT
           return {"status": False, "message": "You are missing one of the values."}
     
     data.append(
@@ -429,8 +429,48 @@ def create_car(car_data:dict):
    )
     return {"status": "True","message": "Car added successfully."}
 
+@app.patch("/update_car{id}")
+def update_car(id:int, car_data:dict , resp:Response):
 
+  if not any(car_data.get("brand"), car_data.get("model"),car_data.get("year"),
+                car_data.get("color"),
+                car_data.get("registration_number"),
+                car_data.get("owner_name"),
+                car_data.get("email"),
+                car_data.get("phone"),
+                car_data.get("city"),
+                car_data.get("state") ):
+     
+     resp.status_code = status.HTTP_400_CONFLICT
+     return {"status": "False","message": "Enter atleast one value to update."}
+  for x in data:
+     if x.id == id:
+                if car_data.get("brand"): x.brand = car_data['brand']
+                if car_data.get("model"): x.model = car_data['model']
+                if car_data.get("year"): x.year = car_data['year']
+                if car_data.get("color"): x.color = car_data['color']
+                if car_data.get("registration_number"):  x.registration_number = car_data['registration_number']
+                if car_data.get("owner_name"):  x.owner_name = car_data['owner_name']
+                if car_data.get("email"):  x.email = car_data['email']
+                if car_data.get("phone"):  x.phone = car_data['phone']
+                if car_data.get("city"):  x.city = car_data['city']
+                if car_data.get("state") :  x.state = car_data['state']
 
+                return {"status": "True","message": "Car updated successfully."}
 
+  resp.status_code = status.HTTP_404_NOT_FOUND
+  return {"status": "False","message": "Enter atleast one value to update."}
+
+@app.delete("/delete_car{id}")
+def update_car(id:int, resp:Response):
+   for x in data:
+           if x.id == id:
+               data.remove(x)
+               return {"status": True, "message": "Car deleted successfully."}
+   
+   resp.status_code = status.HTTP_204_NO_CONTENT
+   return {"status": False, "message": "Invalid ID."}
+
+     
 
 
